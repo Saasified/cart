@@ -3,9 +3,9 @@ Laravel Shopping Cart
 
 [![Run tests](https://github.com/madalinignisca/laravel-shopping-cart/actions/workflows/default.yml/badge.svg)](https://github.com/madalinignisca/laravel-shopping-cart/actions/workflows/default.yml)
 
-[![Packagist](https://img.shields.io/packagist/v/melihovv/laravel-shopping-cart.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
-[![Packagist](https://poser.pugx.org/melihovv/laravel-shopping-cart/d/total.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
-[![Packagist](https://img.shields.io/packagist/l/melihovv/laravel-shopping-cart.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
+[![Packagist](https://img.shields.io/packagist/v/saasify/shopping-cart.svg)](https://packagist.org/packages/saasify/shopping-cart)
+[![Packagist](https://poser.pugx.org/saasify/shopping-cart/d/total.svg)](https://packagist.org/packages/saasify/shopping-cart)
+[![Packagist](https://img.shields.io/packagist/l/saasify/shopping-cart.svg)](https://packagist.org/packages/saasify/shopping-cart)
 
 |Laravel|PHP|Shopping Cart|
 |-------|---|-------------|
