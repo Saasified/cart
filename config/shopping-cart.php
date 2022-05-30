@@ -12,9 +12,9 @@ return [
     |
     */
 
-    'repository' => \Melihovv\ShoppingCart\Repositories\ShoppingCartDatabaseRepository::class,
+    'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartDatabaseRepository::class,
 
-    // 'repository' => \Melihovv\ShoppingCart\Repositories\ShoppingCartRedisRepository::class,
+    // 'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartRedisRepository::class,
 
     /*
     |--------------------------------------------------------------------------

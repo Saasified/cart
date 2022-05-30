@@ -2,7 +2,6 @@ Laravel Shopping Cart
 =====================
 
 [![GitHub Workflow Status](https://github.com/melihovv/laravel-shopping-cart/workflows/Run%20tests/badge.svg)](https://github.com/melihovv/laravel-shopping-cart/actions)
-[![styleci](https://styleci.io/repos/95455977/shield)](https://styleci.io/repos/95455977)
 
 [![Packagist](https://img.shields.io/packagist/v/melihovv/laravel-shopping-cart.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
 [![Packagist](https://poser.pugx.org/melihovv/laravel-shopping-cart/d/total.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
@@ -12,13 +11,14 @@ Laravel Shopping Cart
 
 Install via composer
 ```
-composer require melihovv/laravel-shopping-cart
+composer require saasify/shopping-cart
 ```
 
 ### Publish configuration file and migrations
+Edit config/shopping-cart.php if necesarry
 
 ```
-php artisan vendor:publish --provider="Melihovv\ShoppingCart\ServiceProvider"
+php artisan vendor:publish --provider="Saasify\ShoppingCart\ServiceProvider"
 ```
 
 ### Run migrations
@@ -38,11 +38,11 @@ php artisan migrate
 
 Regiser facade in config/app.php
 ```
-'Cart' => 'Melihovv\ShoppingCart\Facades\ShoppingCart',
+'Cart' => 'Saasify\ShoppingCart\Facades\ShoppingCart',
 ```
 or
 ```
-use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
+use Saasify\ShoppingCart\Facades\ShoppingCart as Cart;
 ```
 in the below examples.
 
@@ -163,9 +163,9 @@ You can choose one by specifying repository class name in config
 ```php
 // config/shopping-cart.php
 
-'repository' => \Melihovv\ShoppingCart\Repositories\ShoppingCartDatabaseRepository::class,
+'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartDatabaseRepository::class,
 // or
-'repository' => \Melihovv\ShoppingCart\Repositories\ShoppingCartRedisRepository::class,
+'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartRedisRepository::class,
 ```
 
 In order to use redis storage you also need to install `predis/predis` package.
@@ -239,6 +239,7 @@ Cart::getTotal(); // return 1900 - 300 = 1600
 If you discover any security related issues, please email amelihovv@ya.ru instead of using the issue tracker.
 
 ## Credits
-
+- [Madalin Ignisca](https://github.com/madalinignisca)
+### Original developers
 - [Alexander Melihov](https://github.com/melihovv)
 - [All contributors](https://github.com/melihovv/laravel-shopping-cart/graphs/contributors)

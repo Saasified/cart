@@ -1,9 +1,9 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Tests;
+namespace Saasify\ShoppingCart\Tests;
 
 use Illuminate\Support\Facades\Redis;
-use Melihovv\ShoppingCart\Repositories\ShoppingCartRedisRepository;
+use Saasify\ShoppingCart\Repositories\ShoppingCartRedisRepository;
 use Orchestra\Testbench\TestCase;
 
 class ShoppingCartRedisTest extends TestCase

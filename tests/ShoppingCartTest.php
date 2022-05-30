@@ -1,10 +1,10 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Tests;
+namespace Saasify\ShoppingCart\Tests;
 
 use Illuminate\Support\Collection;
-use Melihovv\ShoppingCart\Coupons\FixedDiscountCoupon;
-use Melihovv\ShoppingCart\Coupons\PercentDiscountCoupon;
+use Saasify\ShoppingCart\Coupons\FixedDiscountCoupon;
+use Saasify\ShoppingCart\Coupons\PercentDiscountCoupon;
 use Orchestra\Testbench\TestCase;
 
 class ShoppingCartTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Melihovv\ShoppingCart;
+namespace Saasify\ShoppingCart;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

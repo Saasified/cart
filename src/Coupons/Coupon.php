@@ -1,6 +1,6 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Coupons;
+namespace Saasify\ShoppingCart\Coupons;
 
 abstract class Coupon
 {

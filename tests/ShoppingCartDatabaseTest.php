@@ -1,6 +1,6 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Tests;
+namespace Saasify\ShoppingCart\Tests;
 
 use Orchestra\Testbench\TestCase;
 

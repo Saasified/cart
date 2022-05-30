@@ -1,9 +1,9 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Tests;
+namespace Saasify\ShoppingCart\Tests;
 
-use Melihovv\ShoppingCart\Coupons\FixedDiscountCoupon;
-use Melihovv\ShoppingCart\Coupons\PercentDiscountCoupon;
+use Saasify\ShoppingCart\Coupons\FixedDiscountCoupon;
+use Saasify\ShoppingCart\Coupons\PercentDiscountCoupon;
 
 trait ShoppingCartRepositoryTester
 {

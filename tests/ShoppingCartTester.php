@@ -1,11 +1,11 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Tests;
+namespace Saasify\ShoppingCart\Tests;
 
 use Illuminate\Support\Collection;
-use Melihovv\ShoppingCart\CartItem;
-use Melihovv\ShoppingCart\Facades\ShoppingCart;
-use Melihovv\ShoppingCart\ServiceProvider;
+use Saasify\ShoppingCart\CartItem;
+use Saasify\ShoppingCart\Facades\ShoppingCart;
+use Saasify\ShoppingCart\ServiceProvider;
 
 trait ShoppingCartTester
 {

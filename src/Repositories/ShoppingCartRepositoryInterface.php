@@ -1,6 +1,6 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Repositories;
+namespace Saasify\ShoppingCart\Repositories;
 
 use stdClass;
 

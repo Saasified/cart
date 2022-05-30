@@ -1,10 +1,10 @@
 <?php
 
-namespace Melihovv\ShoppingCart;
+namespace Saasify\ShoppingCart;
 
 use Illuminate\Support\Collection;
-use Melihovv\ShoppingCart\Coupons\Coupon;
-use Melihovv\ShoppingCart\Repositories\ShoppingCartRepositoryInterface;
+use Saasify\ShoppingCart\Coupons\Coupon;
+use Saasify\ShoppingCart\Repositories\ShoppingCartRepositoryInterface;
 
 class ShoppingCart
 {

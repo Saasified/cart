@@ -1,6 +1,6 @@
 <?php
 
-namespace Melihovv\ShoppingCart;
+namespace Saasify\ShoppingCart;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;

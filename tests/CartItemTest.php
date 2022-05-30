@@ -1,8 +1,8 @@
 <?php
 
-namespace Melihovv\ShoppingCart\Tests;
+namespace Saasify\ShoppingCart\Tests;
 
-use Melihovv\ShoppingCart\CartItem;
+use Saasify\ShoppingCart\CartItem;
 use Orchestra\Testbench\TestCase;
 
 class CartItemTest extends TestCase
