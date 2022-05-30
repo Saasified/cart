@@ -1,7 +1,7 @@
 Laravel Shopping Cart
 =====================
 
-[![GitHub Workflow Status](https://github.com/melihovv/laravel-shopping-cart/workflows/Run%20tests/badge.svg)](https://github.com/melihovv/laravel-shopping-cart/actions)
+[![Run tests](https://github.com/madalinignisca/laravel-shopping-cart/actions/workflows/default.yml/badge.svg)](https://github.com/madalinignisca/laravel-shopping-cart/actions/workflows/default.yml)
 
 [![Packagist](https://img.shields.io/packagist/v/melihovv/laravel-shopping-cart.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
 [![Packagist](https://poser.pugx.org/melihovv/laravel-shopping-cart/d/total.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
@@ -12,6 +12,7 @@ Laravel Shopping Cart
 |9.x    |8.x|8.0          |
 |8.x    |7.4|8.0          |
 |8.x    |8.0|8.0          |
+|6.x    |8.0|8.0          |
 |6.x    |7.4|8.0          |
 
 ## Install
