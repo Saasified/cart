@@ -7,6 +7,13 @@ Laravel Shopping Cart
 [![Packagist](https://poser.pugx.org/melihovv/laravel-shopping-cart/d/total.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
 [![Packagist](https://img.shields.io/packagist/l/melihovv/laravel-shopping-cart.svg)](https://packagist.org/packages/melihovv/laravel-shopping-cart)
 
+|Laravel|PHP|Shopping Cart|
+|-------|---|-------------|
+|9.x    |8.x|8.0          |
+|8.x    |7.4|8.0          |
+|8.x    |8.0|8.0          |
+|6.x    |7.4|8.0          |
+
 ## Install
 
 Install via composer
