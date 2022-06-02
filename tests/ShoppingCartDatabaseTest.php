@@ -1,18 +1,18 @@
 <?php
 
-namespace Saasify\ShoppingCart\Tests;
+namespace Saasify\Cart\Tests;
 
 use Orchestra\Testbench\TestCase;
 
-class ShoppingCartDatabaseTest extends TestCase
+class CartDatabaseTest extends TestCase
 {
-    use ShoppingCartRepositoryTester;
+    use CartRepositoryTester;
 
     protected function getEnvironmentSetUp($app)
     {
         $config = $app['config'];
 
-        $config->set('shopping-cart.database.connection', 'testing');
+        $config->set('cart.database.connection', 'testing');
         $config->set('database.default', 'testing');
         $config->set('database.connections.testing', [
             'driver' => 'sqlite',

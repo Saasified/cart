@@ -1,5 +1,5 @@
 {
-  "name": "saasify/shopping-cart",
+  "name": "saasify/cart",
   "description": "Shopping cart package for Laravel",
   "license": "MIT",
   "keywords": [
@@ -20,12 +20,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Saasify\\ShoppingCart\\": "src"
+      "Saasify\\Cart\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Saasify\\ShoppingCart\\Tests\\": "tests"
+      "Saasify\\Cart\\Tests\\": "tests"
     }
   },
   "require": {
@@ -47,7 +47,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Saasify\\ShoppingCart\\ServiceProvider"
+        "Saasify\\Cart\\ServiceProvider"
       ]
     }
   },

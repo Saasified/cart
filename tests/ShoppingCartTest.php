@@ -1,15 +1,15 @@
 <?php
 
-namespace Saasify\ShoppingCart\Tests;
+namespace Saasify\Cart\Tests;
 
 use Illuminate\Support\Collection;
-use Saasify\ShoppingCart\Coupons\FixedDiscountCoupon;
-use Saasify\ShoppingCart\Coupons\PercentDiscountCoupon;
+use Saasify\Cart\Coupons\FixedDiscountCoupon;
+use Saasify\Cart\Coupons\PercentDiscountCoupon;
 use Orchestra\Testbench\TestCase;
 
-class ShoppingCartTest extends TestCase
+class CartTest extends TestCase
 {
-    use ShoppingCartTester;
+    use CartTester;
 
     public function testAddItemToCart()
     {

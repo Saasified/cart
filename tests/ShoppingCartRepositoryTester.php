@@ -1,13 +1,13 @@
 <?php
 
-namespace Saasify\ShoppingCart\Tests;
+namespace Saasify\Cart\Tests;
 
-use Saasify\ShoppingCart\Coupons\FixedDiscountCoupon;
-use Saasify\ShoppingCart\Coupons\PercentDiscountCoupon;
+use Saasify\Cart\Coupons\FixedDiscountCoupon;
+use Saasify\Cart\Coupons\PercentDiscountCoupon;
 
-trait ShoppingCartRepositoryTester
+trait CartRepositoryTester
 {
-    use ShoppingCartTester;
+    use CartTester;
 
     public function testStoreAndRestore()
     {
@@ -25,6 +25,6 @@ trait ShoppingCartRepositoryTester
 
         $this->assertEquals(5, \Cart::count());
         $this->assertEquals(2, \Cart::coupons()->count());
-        $this->assertEquals('shopping-cart.default', \Cart::currentInstance());
+        $this->assertEquals('cart.default', \Cart::currentInstance());
     }
 }

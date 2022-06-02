@@ -1,13 +1,13 @@
 <?php
 
-namespace Saasify\ShoppingCart\Tests;
+namespace Saasify\Cart\Tests;
 
 use Illuminate\Support\Collection;
-use Saasify\ShoppingCart\CartItem;
-use Saasify\ShoppingCart\Facades\ShoppingCart;
-use Saasify\ShoppingCart\ServiceProvider;
+use Saasify\Cart\CartItem;
+use Saasify\Cart\Facades\Cart;
+use Saasify\Cart\ServiceProvider;
 
-trait ShoppingCartTester
+trait CartTester
 {
     protected function getPackageProviders($app)
     {
@@ -17,7 +17,7 @@ trait ShoppingCartTester
     protected function getPackageAliases($app)
     {
         return [
-            'Cart' => ShoppingCart::class,
+            'Cart' => Cart::class,
         ];
     }
 

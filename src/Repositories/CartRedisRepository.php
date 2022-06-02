@@ -1,11 +1,11 @@
 <?php
 
-namespace Saasify\ShoppingCart\Repositories;
+namespace Saasify\Cart\Repositories;
 
 use Illuminate\Support\Facades\Redis;
 use stdClass;
 
-class ShoppingCartRedisRepository implements ShoppingCartRepositoryInterface
+class CartRedisRepository implements CartRepositoryInterface
 {
     /**
      * Save shopping cart.

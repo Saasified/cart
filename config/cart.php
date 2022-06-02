@@ -12,9 +12,9 @@ return [
     |
     */
 
-    'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartDatabaseRepository::class,
+    'repository' => \Saasify\Cart\Repositories\CartDatabaseRepository::class,
 
-    // 'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartRedisRepository::class,
+    // 'repository' => \Saasify\Cart\Repositories\CartRedisRepository::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ return [
 
         'connection' => null,
 
-        'table' => 'shopping_cart',
+        'table' => 'cart',
 
     ],
 ];

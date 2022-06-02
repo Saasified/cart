@@ -11,10 +11,10 @@
     <testsuites>
         <testsuite name="package_testsuite">
             <directory suffix=".php">./tests/</directory>
-            <exclude>./tests/ShoppingCartRedisTest.php</exclude>
+            <exclude>./tests/CartRedisTest.php</exclude>
         </testsuite>
         <testsuite name="package_redis_testsuite">
-            <file>./tests/ShoppingCartRedisTest.php</file>
+            <file>./tests/CartRedisTest.php</file>
         </testsuite>
     </testsuites>
     <filter>

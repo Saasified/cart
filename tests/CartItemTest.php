@@ -1,8 +1,8 @@
 <?php
 
-namespace Saasify\ShoppingCart\Tests;
+namespace Saasify\Cart\Tests;
 
-use Saasify\ShoppingCart\CartItem;
+use Saasify\Cart\CartItem;
 use Orchestra\Testbench\TestCase;
 
 class CartItemTest extends TestCase

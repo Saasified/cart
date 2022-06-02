@@ -1,10 +1,10 @@
 <?php
 
-namespace Saasify\ShoppingCart\Repositories;
+namespace Saasify\Cart\Repositories;
 
 use stdClass;
 
-interface ShoppingCartRepositoryInterface
+interface CartRepositoryInterface
 {
     /**
      * Save shopping cart.

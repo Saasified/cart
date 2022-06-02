@@ -1,11 +1,11 @@
 <?php
 
-namespace Saasify\ShoppingCart\Repositories;
+namespace Saasify\Cart\Repositories;
 
 use Illuminate\Database\DatabaseManager;
 use stdClass;
 
-class ShoppingCartDatabaseRepository implements ShoppingCartRepositoryInterface
+class CartDatabaseRepository implements CartRepositoryInterface
 {
     /**
      * Save shopping cart.
@@ -120,7 +120,7 @@ class ShoppingCartDatabaseRepository implements ShoppingCartRepositoryInterface
      */
     private function getTableName()
     {
-        return config('shopping-cart.database.table', 'shopping_cart');
+        return config('cart.database.table', 'shopping_cart');
     }
 
     /**
@@ -130,7 +130,7 @@ class ShoppingCartDatabaseRepository implements ShoppingCartRepositoryInterface
      */
     private function getConnectionName()
     {
-        $connection = config('shopping-cart.database.connection');
+        $connection = config('cart.database.connection');
 
         return is_null($connection) ? config('database.default') : $connection;
     }

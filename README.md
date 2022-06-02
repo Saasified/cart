@@ -1,11 +1,11 @@
 Laravel Shopping Cart
 =====================
 
-[![Run tests](https://github.com/madalinignisca/laravel-shopping-cart/actions/workflows/default.yml/badge.svg)](https://github.com/madalinignisca/laravel-shopping-cart/actions/workflows/default.yml)
+[![Run tests](https://github.com/saasified/cart/actions/workflows/default.yml/badge.svg)](https://github.com/saasified/cart/actions/workflows/default.yml)
 
-[![Packagist](https://img.shields.io/packagist/v/saasify/shopping-cart.svg)](https://packagist.org/packages/saasify/shopping-cart)
-[![Packagist](https://poser.pugx.org/saasify/shopping-cart/d/total.svg)](https://packagist.org/packages/saasify/shopping-cart)
-[![Packagist](https://img.shields.io/packagist/l/saasify/shopping-cart.svg)](https://packagist.org/packages/saasify/shopping-cart)
+[![Packagist](https://img.shields.io/packagist/v/saasify/cart.svg)](https://packagist.org/packages/saasify/cart)
+[![Packagist](https://poser.pugx.org/saasify/cart/d/total.svg)](https://packagist.org/packages/saasify/cart)
+[![Packagist](https://img.shields.io/packagist/l/saasify/cart.svg)](https://packagist.org/packages/saasify/cart)
 
 |Laravel|PHP|Shopping Cart|
 |-------|---|-------------|
@@ -19,14 +19,14 @@ Laravel Shopping Cart
 
 Install via composer
 ```
-composer require saasify/shopping-cart
+composer require saasify/cart
 ```
 
 ### Publish configuration file and migrations
-Edit config/shopping-cart.php if necesarry
+Edit config/cart.php if necesarry
 
 ```
-php artisan vendor:publish --provider="Saasify\ShoppingCart\ServiceProvider"
+php artisan vendor:publish --provider="Saasify\Cart\ServiceProvider"
 ```
 
 ### Run migrations
@@ -46,11 +46,11 @@ php artisan migrate
 
 Regiser facade in config/app.php
 ```
-'Cart' => 'Saasify\ShoppingCart\Facades\ShoppingCart',
+'Cart' => 'Saasify\Cart\Facades\Cart',
 ```
 or
 ```
-use Saasify\ShoppingCart\Facades\ShoppingCart as Cart;
+use Saasify\Cart\Facades\Cart;
 ```
 in the below examples.
 
@@ -169,14 +169,12 @@ Currently there are two possible storage to persist shopping cart:
 You can choose one by specifying repository class name in config
 
 ```php
-// config/shopping-cart.php
+// config/cart.php
 
-'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartDatabaseRepository::class,
+'repository' => \Saasify\Cart\Repositories\CartDatabaseRepository::class,
 // or
-'repository' => \Saasify\ShoppingCart\Repositories\ShoppingCartRedisRepository::class,
+'repository' => \Saasify\Cart\Repositories\CartRedisRepository::class,
 ```
-
-In order to use redis storage you also need to install `predis/predis` package.
 
 ### Cart::store()
 
@@ -250,4 +248,4 @@ If you discover any security related issues, please email amelihovv@ya.ru instea
 - [Madalin Ignisca](https://github.com/madalinignisca)
 ### Original developers
 - [Alexander Melihov](https://github.com/melihovv)
-- [All contributors](https://github.com/melihovv/laravel-shopping-cart/graphs/contributors)
+- [All contributors](https://github.com/melihovv/laravel-cart/graphs/contributors)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Saasify\ShoppingCart\Coupons;
+namespace Saasify\Cart\Coupons;
 
 class FixedDiscountCoupon extends Coupon
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Saasify\ShoppingCart\Facades;
+namespace Saasify\Cart\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class ShoppingCart extends Facade
+class Cart extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'shopping-cart';
+        return 'cart';
     }
 }

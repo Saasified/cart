@@ -1,17 +1,17 @@
 <?php
 
-namespace Saasify\ShoppingCart;
+namespace Saasify\Cart;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
-    const CONFIG_PATH = __DIR__.'/../config/shopping-cart.php';
+    const CONFIG_PATH = __DIR__.'/../config/cart.php';
 
     const MIGRATIONS_PATH = __DIR__.'/../migrations/';
 
     public function boot()
     {
         $this->publishes([
-            self::CONFIG_PATH => config_path('shopping-cart.php'),
+            self::CONFIG_PATH => config_path('cart.php'),
         ], 'config');
 
         $this->publishes([
@@ -23,12 +23,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(self::CONFIG_PATH, 'shopping-cart');
+        $this->mergeConfigFrom(self::CONFIG_PATH, 'cart');
 
-        $this->app->bind('shopping-cart', function () {
-            return new ShoppingCart(
+        $this->app->bind('cart', function () {
+            return new Cart(
                 $this->app->make(
-                    $this->app['config']->get('shopping-cart.repository')
+                    $this->app['config']->get('cart.repository')
                 )
             );
         });

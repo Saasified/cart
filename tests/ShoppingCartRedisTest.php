@@ -1,22 +1,22 @@
 <?php
 
-namespace Saasify\ShoppingCart\Tests;
+namespace Saasify\Cart\Tests;
 
 use Illuminate\Support\Facades\Redis;
-use Saasify\ShoppingCart\Repositories\ShoppingCartRedisRepository;
+use Saasify\Cart\Repositories\CartRedisRepository;
 use Orchestra\Testbench\TestCase;
 
-class ShoppingCartRedisTest extends TestCase
+class CartRedisTest extends TestCase
 {
-    use ShoppingCartRepositoryTester;
+    use CartRepositoryTester;
 
     protected function getEnvironmentSetUp($app)
     {
         $config = $app['config'];
 
         $config->set(
-            'shopping-cart.repository',
-            ShoppingCartRedisRepository::class
+            'cart.repository',
+            CartRedisRepository::class
         );
 
         $config->set('database.redis.client', 'predis');

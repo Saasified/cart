@@ -1,12 +1,12 @@
 <?php
 
-namespace Saasify\ShoppingCart;
+namespace Saasify\Cart;
 
 use Illuminate\Support\Collection;
-use Saasify\ShoppingCart\Coupons\Coupon;
-use Saasify\ShoppingCart\Repositories\ShoppingCartRepositoryInterface;
+use Saasify\Cart\Coupons\Coupon;
+use Saasify\Cart\Repositories\CartRepositoryInterface;
 
-class ShoppingCart
+class Cart
 {
     /**
      * Default instance name.
@@ -26,7 +26,7 @@ class ShoppingCart
     /**
      * Repository for cart store.
      *
-     * @var ShoppingCartRepositoryInterface
+     * @var CartRepositoryInterface
      */
     private $repo;
 
@@ -45,11 +45,11 @@ class ShoppingCart
     private $coupons;
 
     /**
-     * ShoppingCart constructor.
+     * Cart constructor.
      *
-     * @param ShoppingCartRepositoryInterface $repo
+     * @param CartRepositoryInterface $repo
      */
-    public function __construct(ShoppingCartRepositoryInterface $repo)
+    public function __construct(CartRepositoryInterface $repo)
     {
         $this->repo = $repo;
         $this->instance(self::DEFAULT_INSTANCE_NAME);
@@ -238,9 +238,9 @@ class ShoppingCart
     public function instance($name)
     {
         $name = $name ?: self::DEFAULT_INSTANCE_NAME;
-        $name = str_replace('shopping-cart.', '', $name);
+        $name = str_replace('cart.', '', $name);
 
-        $this->instanceName = sprintf('%s.%s', 'shopping-cart', $name);
+        $this->instanceName = sprintf('%s.%s', 'cart', $name);
 
         return $this;
     }
