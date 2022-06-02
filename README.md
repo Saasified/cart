@@ -1,5 +1,7 @@
-Laravel Shopping Cart
-=====================
+Saasify Cart
+============
+
+A simple cart for Laravel. Might be oppinionated for Saasify/Saasify, but should work for any other projects.
 
 [![Run tests](https://github.com/saasified/cart/actions/workflows/default.yml/badge.svg)](https://github.com/saasified/cart/actions/workflows/default.yml)
 
