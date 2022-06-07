@@ -11,11 +11,11 @@ A simple cart for Laravel. Might be oppinionated for Saasify/Saasify, but should
 
 |Laravel|PHP|Shopping Cart|
 |-------|---|-------------|
-|9.x    |8.x|8.0          |
-|8.x    |7.4|8.0          |
-|8.x    |8.0|8.0          |
-|6.x    |8.0|8.0          |
-|6.x    |7.4|8.0          |
+|9.x    |8.x|9.0          |
+|8.x    |7.4|9.0          |
+|8.x    |8.0|9.0          |
+|6.x    |8.0|9.0          |
+|6.x    |7.4|9.0          |
 
 ## Install
 
@@ -45,16 +45,6 @@ php artisan migrate
 * [Coupons](#coupons)
 
 ## Usage
-
-Regiser facade in config/app.php
-```
-'Cart' => 'Saasify\Cart\Facades\Cart',
-```
-or
-```
-use Saasify\Cart\Facades\Cart;
-```
-in the below examples.
 
 The shopping cart gives you the following methods to use:
 
